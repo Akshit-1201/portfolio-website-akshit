@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a4ad38790.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header for the Webpage -->
+    <div id="header">
+        <!-- Navigation bar -->
+        <!-- logo -->
+        <!-- list of menu -->
+        <div class="container">
+            <nav>
+                <img src="images/MyLogo.png" class="logo" alt="No Preview">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- Adding text to opur Header tag -->
+            <div class="header-text">
+                <p> Data Science Solutions</p>
+                <h1>Hi, I'm <span>Akshit</span> <br>From J&K, India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ABOUT ME----------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- Here we will add some images -->
+                <div class="about-col-1">
+                    <img src="images/myPic 1.png" alt="No Preview">
+                </div>
+                <!-- Here we will add some Text  -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hardworking and ambitious individual with a great passion for the software industry. Extremely
+                        patient, self-motivated, and very adaptable to accomplish challenging objectives. Successful in
+                        building strong and healthy relationships with colleagues to achieve better results.
+                    </p>
+
+                    <!-- Creating the sub sections of the About Me -->
+                    <div class="tab-titles">
+                        <!-- Added two classes to get the animation -->
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+
+
+                    </div>
+                    <!-- SKILLS  -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analysis</span><br>Proficient in data analysis and visualization using
+                                Tableau and Power BI to drive insights and business decisions.</li>
+
+                            <li><span>Machine Learning</span><br>Skilled in developing and deploying machine learning
+                                models for predictive analytics and data-driven solutions.</li>
+
+                            <li><span>Artificial Intelligence</span><br>Experienced in designing and implementing deep
+                                learning models and AI solutions for complex problem-solving.</li>
+
+                            <li><span>Image Processing</span><br>Skilled in image processing techniques for analysis,
+                                enhancement, and feature extraction from visual data.</li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Experience  -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>The Sparks Foundation</span><br>Data Science Intern (From Sept 2022 - Oct 2022)
+                            </li>
+
+                            <li><span>Seygnux Solutions Pvt. Ltd.</span><br>Data Intern (From May 2023 - Jul 2023)</li>
+
+                            <li><span>LatentView Analytics</span><br>Data Analyst (Full-Time)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education  -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Matriculation (2018)</span><br>Shangrilla Public School - 92.4%</li>
+                            <li><span>Senior Secondary (2020)</span><br>SRML Hr. Sec. School - 94.8%</li>
+                            <li><span>B.Tech IT (2020-24)</span><br>VIT Vellore - 8.13 (CGPA)</li>
+                        </ul>
+                    </div>
+
+                    <!-- ----- Certifications -------  -->
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <a href="https://drive.google.com/file/d/1Q7j-kBjDciaQTuid2WBwGq62xO8zsSMk/view?usp=sharing"
+                                target="_blank">
+                                <li><span>MTA (Introduction to Programming using Python)</span><br>By Microsoft</li>
+                            </a>
+
+                            <a href="https://drive.google.com/file/d/1Olv59DMUJDUtwDmj8t28oQnVdck5FCDF/view?usp=sharing"
+                                target="_blank">
+                                <li><span>Artificial Intelligence Using Python</span><br>By InMovidu</li>
+                            </a>
+
+                            <a href="https://drive.google.com/file/d/1vFbTEB5ev47TYqgFwNtp52boUsPyh53j/view?usp=sharing"
+                                target="_blank">
+                                <li><span>Artificial Intelligence Analyst</span><br>By IBM</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- SERVICES -----------------  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Analysis</h2><br>
+                    <p>Offering data analysis services with expertise in data cleaning, statistical analysis, and
+                    visualization using tools like Excel, Tableau, and Power BI.<br>
+                    I provide actionable insights,
+                    trend analysis, and customized reports to support data-driven decision-making for businesses.
+                    <p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Machine Learning</h2><br>
+                    <p>Providing machine learning services, including data preprocessing, model development, and
+                    deployment for predictive analytics.<br>Expertise in supervised and unsupervised learning, feature
+                    engineering, and algorithm optimization to deliver tailored, scalable solutions for complex
+                    business challenges.
+                    <p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <h2>Image Processing</h2><br>
+                    <p>Specializing in image processing services, including image enhancement, segmentation, and feature extraction. <br>I utilize advanced algorithms and techniques to analyze and transform visual data, enabling businesses to derive meaningful insights and improve decision-making through visual information.
+                    <p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <a href="https://www.fiverr.com/wushang1204/data-science-ml-ai-python-tableau-projects" class="hire-btn" target="_blank">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- ------------- PORTFOLIO -------------  -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <!-- ----- Project 1 -----  -->
+                <div class="work">
+                    <img src="images/p1.jpg" alt="No Preview">
+                    <div class="layer">
+                        <h3>COVID-19 Analysis Dashboard</h3>
+                        <p>This project involves the development of a COVID-19 analysis dashboard for India using Tableau. The dashboard visualizes key metrics, such as infection rates, recovery rates, and vaccination progress, enabling users to track the pandemic's impact over time. Interactive features allow for detailed insights at national and state levels, facilitating informed decision-making and public awareness.</p>
+                        <a href="https://public.tableau.com/app/profile/akshit.negi7767/viz/Covid-19_17295073199450/Dashboard1" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <!---- Project 2 -----  -->
+                <div class="work">
+                    <img src="images/p2.jpg" alt="No Preview">
+                    <div class="layer">
+                        <h3>Real-Time Emotion Detection</h3>
+                        <p>Using Convolution Neural Network (CNN), we aim to develop a machine learning model which can classify images of humans based on 7 emotions (angry, fear, disgust, happy, neutral, sad, surprise). We will be going about this by training the data with the help of a dataset, containing images of people, and the emotion portrayed by them.</p>
+                        <a href="https://github.com/Akshit-1201/-Emotion-Detection-Model" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <!---- Project 3 -----  -->
+                <div class="work">
+                    <img src="images/p3.jpg" alt="No Preview">
+                    <div class="layer">
+                        <h3>Sentiment Analysis and Product Recommendation</h3>
+                        <p>This Project focuses on creating a product recommendation system by analyzing Amazon product reviews. We will classify the reviews as positive or negative using XGBoost and CatBoost classifiers. This approach will streamline the decision-making process for consumers while providing valuable insights for businesses to enhance their products and marketing strategies.</p>
+                        <a href="https://github.com/Akshit-1201/Sentiment-Analysis-and-Product-Recommendation-on-Amazon-s-Product-Review" target="_blank"><i class="fa-solid fa-link" target="_blank"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/Akshit-1201?tab=repositories" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------------- CONTACT ME ------------------  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> akshitnegi.work@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9469088991</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/akshit.negi.33/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/akshit_2101/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akshit-negi-aaa72a1ba/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/AkshitNegi3021" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+                    <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbxovVVzgcf--CMfjzG-wp87xJ4Vki2aiZLvKqPYcjhy5uRmQh_hNFrMCwTuTCtgkHRt/exec">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©️ Akshit. Made with <i class="fa-solid fa-heart"></i> by Akshit Negi</p>
+        </div>
+    </div>
+
+    <script>
+
+        // Showing only the clicked About Me Tab Contents 
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        // For side Menu
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+
+        // For Google Form data collection
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz0uVRGa0-KdY0q4KwaWOYBVfWoN6DfWZ30K4IQ9uKLZibIcJ1oIQ4-kFX80w_1jed0/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully !"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
